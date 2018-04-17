@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="default_black">#484848</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+    <color name="bg_screen_additional">#29b6f6</color>
+    <color name="bg_main_activity">#fb8c00</color>
+    <color name="bg_secondary_activity">#ffb74d</color>
+    <color name="bg_third_activity">#c25e00</color>
+    <color name="bg_semi_activity">#d67601</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <!-- button -->
+    <color name="btn_call_center">#4fc3f7</color>
+    <color name="layout_white">#FFFFF0</color>
+    <color name="hint_color">#b3e5fc</color>
+
+    <color name="blue_component">#61b3ff</color>
+    <color name="blue_component_clicked">#527eac</color>
+    <color name="colorRed">#FF1111</color>
+    <color name="default_system_green">#17a589</color>
+    <color name="holo_blue_light">#ff00ddff</color>
+    <color name="textColor">#b3ffffff</color>
+    <color name="default_grey_text_component">#808080</color>
+    <color name="light_grey">#DCDCDC</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="colorBright">#55333333</color>
+</resources>

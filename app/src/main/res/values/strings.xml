@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">QwikFund</string>
+
+    <!--Login Page-->
+    <string name="tab_borrower">Borrower</string>
+    <string name="tab_investor">Investor</string>
+    <string name="tab_simulasi_pinjaman">Simulasi</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    
+    <string name="nav_menu_dashboard">Dashboard</string>
+    <string name="nav_menu_pengajuan_pinjaman">Daftar Pengajuan Pinjaman</string>
+    <string name="nav_menu_pinjaman_saya">Pinjaman Saya</string>
+    <string name="nav_menu_account">Account</string>
+    <string name="nav_menu_logout">Logout</string>
+
+    <string name="text_username_login">Username</string>
+    <string name="text_password_login">Password</string>
+    <string name="text_login_btn">Login</string>
+    <string name="text_cancel_btn">Cancel</string>
+    <string name="press_call_center">Contact Danamon Call Center to retrieve your user id and password</string>
+
+    <string name="tab_title">Tab title</string>
+    <string name="ms_back">BACK</string>
+    <string name="ms_next">NEXT</string>
+    <string name="ms_complete">COMPLETE</string>
+
+    <string name="text">Fragment #%d</string>
+    <string name="investor">Mulai berinvestasi</string>
+    <string name="borowwer">Ajukan pinjaman</string>
+    <string name="question_borrower">Darimana Anda tahu tentang QwikFund?</string>
+    <string name="cb_borrower_kacab">Kantor Cabang</string>
+    <string name="cb_borrower_ib">Internet Banking/Danamon Online Banking (DOB)</string>
+    <string name="cb_borrower_media">Media (TV/Radio/Koran/Iklan)</string>
+    <string name="cb_borrower_lainnya">Lainnya</string>
+    <string name="question_aktivasi">Pilih cara aktivasi Anda :</string>
+
+    <string name="txt_dob">Danamon Online Banking (DOB)</string>
+    <string name="txt_debit_card">Kartu Debit / ATM</string>
+    <string name="txt_credt_card">Kartu Kredit</string>
+    <string name="txt_syarat_ketentuan">Syarat dan Ketentuan</string>
+    <string name="txt_ringkasan">RINGKASAN INFORMASI LAYANAN</string>
+    <string name="txt_persyaratan">PERSYARATAN KEIKUT-SERTAAN LAYANAN</string>
+    <string name="txt_manfaat_produk">MANFAAT PRODUK</string>
+    <string name="txt_tidak">Tidak Setuju</string>
+    <string name="txt_setuju">Setuju</string>
+    <string name="txt_title_pengajuan_pinjaman">Pengajuan Pinjaman</string>
+    <string name="txt_simulasi_pinjaman">Simulasi Pinjaman</string>
+    <string name="txt_request_form">Request Form</string>
+    <string name="txt_list_pengajuan">List Pengajuan</string>
+    <string name="simulasi_prompt">Pilih Tujuan Peminjaman</string>
+
+    <string-array name="simulasi_pinjaman">
+        <item>Liburan</item>
+        <item>Biaya Pendidikan</item>
+        <item>Investasi</item>
+        <item>Pembayaran Rumah Sakit</item>
+        <item>Pendanaan Usaha</item>
+        <item>Pernikahan</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <!--simulasi peminjaman-->
+    <string name="txt_tujuan_pinjaman">Tujuan Pinjaman</string>
+    <string name="txt_jumlah_pinjaman">Jumlah Pinjaman (Rp)</string>
+    <string name="txt_footnote_pinjaman">Pinjaman 5.000.000 - 15.000.000 kelipatan 1.000.000</string>
+    <string name="txt_lama_pinjaman">Lama Pinjaman (bulan)</string>
+    <string name="txt_footnote_lama_pinjaman">1-6 bulan</string>
+    <string name="txt_bunga_pinjaman">Bunga (%)</string>
+    <string name="txt_bunga_pinjaman_rupiah">Bunga (Rp)</string>
+    <string name="txt_footnote_bunga">*Perkiraan bunga 0.90% - 2%</string>
+    <string name="btn_kalkulasi">Kalkulasi</string>
+
+    <string name="txt_nilai_pinjaman">Nilai Pinjaman</string>
+    <string name="txt_nilai_pencairan_dana">Nilai Pencairan Dana</string>
+    <string name="txt_bunga_rupiah">Bunga (Rp)</string>
+    <string name="txt_cicilan_perbulan">Cicilan Per Bulan (Rp)</string>
+    <string name="txt_biaya_administrasi">Biaya Administrasi</string>
+    <string name="btn_submit">Submit</string>
+
+    <!-- Dashboard -->
+    <string name="title_header">Dashboard</string>
+    <string name="title_rekap">Rekap</string>
+    <string name="txt_total_akun">Total Akun</string>
+
+    <!-- Dashboard Investor-->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_daftar_pinjaman">Daftar Pengajuan Pinjaman</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_logout">Logout</string>
+
+    <!-- Rincian Pengajuan Pinjaman-->
+    <string name="title_rincian_pengajuan">Rincian Pengajuan Pinjaman</string>
+    <string name="txt_disclaimer">Disclaimer</string>
+    <string name="btn_back_simulation">Back To Simulation</string>
+
+    <!--List Pengajuan-->
+    <string name="header_qwikfund">My QwikFund Funding</string>
+    <string name="title_detail_pinjaman">Detail Pinjaman Saya</string>
+    <string name="txt_id_peminjam">ID Peminjam</string>
+    <string name="txt_status_pinjaman">Status Pinjaman</string>
+    <string name="txt_tujuan_pinjaman_borrower">Tujuan Pinjaman</string>
+    <string name="txt_legend">Legend</string>
+    <string name="txt_deskripsi_pengajuan_pinjaman">Deskripsi pinjaman</string>
+    <string name="txt_tanggal_pengajuan">Tanggal Pengajuan</string>
+
+    <!-- Investor-->
+    <string name="title_investor_daftar_pinjam">Daftar Pinjaman</string>
+    <string name="sub_title_header">My Funding Detail</string>
+    <string name="txt_borrower_grade">Borrower Grade</string>
+    <string name="title_activity_borrower_dashboard">Borrower</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_logout">Log Out</string>
+    <string name="title_activity_investor_dashboard">Investor</string>
+    <string name="txt_email">Email</string>
+    
+    <!-- account borrower -->
+    <string name="header_my_account_borrower">My Account</string>
+    <string name="title_account_detail">Account Detail</string>
+
+    <!-- get account -->
+    <string name="kode_akun">Code Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="borrower_status">Borrower</string>
+    <string name="investor_status">Investor</string>
+
+    <!-- rincian pengajuan pinjaman -->
+    <string name="header_pengajuan_pinjaman">Rincian Pengajuan Pinjaman</string>
+    <string name="warning_check_pengajuan_pinjaman">Mohon cek kembali rincian pengajuan pinjaman Anda.</string>
+    <string name="deskripsi_permohonan_pinjaman">Deskripsi Permohonan Pinjaman</string>
+
+
+</resources>

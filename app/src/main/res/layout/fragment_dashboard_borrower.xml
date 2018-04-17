@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_header"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:background="@color/bg_main_activity"
+        android:padding="@dimen/area_padding"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/side_padding"
+        android:layout_marginRight="@dimen/side_padding"
+        android:layout_marginTop="@dimen/side_padding"
+        android:background="@color/layout_white"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/setting_layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/side_padding"
+            android:layout_marginRight="@dimen/side_padding"
+            android:orientation="vertical"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/header_simulasi_pinjaman"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/title_rekap"
+                    android:textSize="10pt"
+                    android:layout_marginBottom="15dp"/>
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="@dimen/side_padding">
+                <TextView
+                    android:id="@+id/total_akun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txt_total_akun"
+                    android:textColor="@color/default_black" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/jumlah_pinjaman_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:text="Rp.0"
+                    android:enabled="false"/>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/side_padding">
+                <TextView
+                    android:id="@+id/saldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Saldo Bunga Diterima"
+                    android:textColor="@color/default_black" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/lama_pinjaman_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:text="Rp.0"
+                    android:enabled="false"/>
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="@dimen/side_padding">
+                <TextView
+                    android:id="@+id/saldo_cash_hand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Saldo in Cash Hand"
+                    android:textColor="@color/default_black" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/edt_saldo_cash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:text="Rp.0"
+                    android:enabled="false"/>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/side_padding">
+                <TextView
+                    android:id="@+id/dalam_pendanaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dalam Pendanaan"
+                    android:textColor="@color/default_black" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/bunga_pinjaman_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:text="Rp.0"
+                    android:enabled="false"/>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/side_padding">
+                <TextView
+                    android:id="@+id/pendanaan_aktif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pendanaan Aktif"
+                    android:textColor="@color/default_black" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/edt_pendanaan_aktif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:text="Rp.0"
+                    android:enabled="false"/>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/side_padding">
+                <TextView
+                    android:id="@+id/pengembalian_terlambat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pengembalian Terlambat"
+                    android:textColor="@color/default_black" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/edt_pengembalian_terlambat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:text="Rp.0"
+                    android:enabled="false"/>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/side_padding">
+                <TextView
+                    android:id="@+id/pengembalian_terdekat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pengembalian Terdekat"
+                    android:textColor="@color/default_black" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/edt_pengembalian_terdekat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:text="Rp.0"
+                    android:enabled="false"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

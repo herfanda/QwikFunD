@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_activity">
+
+
+        <TextView
+            android:id="@+id/txt_tanya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_borrower"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/ch_kantor_cabang"
+            android:layout_alignStart="@+id/ch_kantor_cabang"
+            android:layout_marginTop="71dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorWhite"/>
+
+        <CheckBox
+            android:id="@+id/ch_kantor_cabang"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:checked="false"
+            android:padding="1dp"
+            android:text="@string/cb_borrower_kacab"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:layout_below="@+id/txt_tanya"
+            android:layout_alignLeft="@+id/ch_internet_banking"
+            android:layout_alignStart="@+id/ch_internet_banking" />
+
+        <CheckBox
+            android:id="@+id/ch_internet_banking"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:checked="false"
+            android:padding="1dp"
+            android:text="@string/cb_borrower_ib"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/txt_tanya"
+            android:layout_centerHorizontal="true" />
+
+        <CheckBox
+            android:id="@+id/ch_media"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:checked="false"
+            android:padding="1dp"
+            android:text="@string/cb_borrower_media"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:layout_below="@+id/ch_kantor_cabang"
+            android:layout_alignLeft="@+id/ch_kantor_cabang"
+            android:layout_alignStart="@+id/ch_kantor_cabang" />
+
+        <CheckBox
+            android:id="@+id/ch_lainnya"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:checked="false"
+            android:padding="1dp"
+            android:text="@string/cb_borrower_lainnya"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:layout_below="@+id/ch_internet_banking"
+            android:layout_alignLeft="@+id/ch_media"
+            android:layout_alignStart="@+id/ch_media" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/ch_lainnya"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/pilih_aktivasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/question_aktivasi"
+                    android:textColor="@color/colorWhite"
+                    android:layout_above="@+id/linearLayout2"
+                    android:layout_alignLeft="@+id/ch_lainnya"
+                    android:layout_alignStart="@+id/ch_lainnya"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="@dimen/side_padding"/>
+
+                <Button
+                    android:id="@+id/btnDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/txt_dob"
+                    android:layout_below="@+id/pilih_aktivasi"
+                    android:layout_alignLeft="@+id/pilih_aktivasi"
+                    android:layout_alignStart="@+id/pilih_aktivasi"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/bg_secondary_activity"
+                    android:layout_alignRight="@+id/ch_lainnya"
+                    android:layout_alignEnd="@+id/ch_lainnya"
+                    android:layout_margin="@dimen/side_padding_button"/>
+
+                <Button
+                    android:id="@+id/btnDebitCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/txt_debit_card"
+                    android:layout_above="@+id/CreaditCard"
+                    android:layout_alignLeft="@+id/CreaditCard"
+                    android:layout_alignStart="@+id/CreaditCard"
+                    android:layout_marginBottom="11dp"
+                    android:background="@color/bg_secondary_activity"
+                    android:layout_alignRight="@+id/DOB"
+                    android:layout_alignEnd="@+id/DOB"
+                    android:layout_margin="@dimen/side_padding_button"/>
+
+                <Button
+                    android:id="@+id/btnCreaditCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/DOB"
+                    android:layout_alignLeft="@+id/DOB"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/DOB"
+                    android:layout_alignStart="@+id/DOB"
+                    android:layout_marginBottom="26dp"
+                    android:background="@color/bg_secondary_activity"
+                    android:text="@string/txt_credt_card"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    android:layout_margin="@dimen/side_padding_button"/>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

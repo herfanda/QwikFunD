@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">160dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    <dimen name="bar_height">200dp</dimen>
+    <dimen name="half_bar_height">100dp</dimen>
+    <dimen name="login_top_margin">46dp</dimen>
+    <dimen name="login_side_padding">80dp</dimen>
+    <dimen name="login_footer_side_padding">20dp</dimen>
+
+    <dimen name="side_padding">10dp</dimen>
+    <dimen name="half_side_padding">10dp</dimen>
+    <dimen name="half_padding">5dp</dimen>
+    <dimen name="tab_indicator">4dp</dimen>
+
+    <dimen name="double_side_padding">20dp</dimen>
+    <dimen name="triple_side_padding">30dp</dimen>
+    <dimen name="fourty_side_padding">40dp</dimen>
+    <dimen name="seventy_side_padding">70dp</dimen>
+    <dimen name="area_padding">15dp</dimen>
+    <dimen name="bottom_area_padding">300dp</dimen>
+    <dimen name="button_area_padding">200dp</dimen>
+
+    <dimen name="side_padding_button">5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

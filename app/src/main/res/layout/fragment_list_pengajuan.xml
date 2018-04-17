@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/divider_one"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@color/light_grey">
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_one"
+            android:background="@color/bg_main_activity"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:text="@string/header_qwikfund"
+                android:textSize="12pt"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="58dp"
+                android:layout_marginStart="58dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="@dimen/side_padding"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginBottom="@dimen/side_padding"
+            android:layout_marginLeft="@dimen/half_side_padding"
+            android:layout_marginRight="@dimen/half_side_padding"
+            android:layout_marginTop="@dimen/side_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/layout_white">
+
+                <LinearLayout
+                    android:id="@+id/setting_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/layout_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_detail_pinjaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_detail_pinjaman"
+                        android:textSize="9pt"
+                        android:textColor="@color/default_black"
+                        android:layout_below="@+id/relativeLayout"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="2dp"
+                        android:paddingBottom="@dimen/side_padding"/>
+
+                    <TableLayout
+                        android:id="@+id/table_tujuan_pinjaman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/id_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_id_peminjam"
+                                android:background="@color/bg_secondary_activity"
+                                android:layout_below="@+id/id_id_peminjam"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/input_id_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/side_padding"
+                                android:background="@color/light_grey"
+                                android:padding="3dp"
+                                />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/txt_status_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bg_secondary_activity"
+                                android:layout_below="@+id/id_tujuan_pinjaman"
+                                android:text="@string/txt_status_pinjaman"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/txt_status_pengajuan_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/side_padding"
+                                android:background="@color/light_grey"
+                                android:text=""
+                                android:padding="3dp"
+                                />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/id_tujuan_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_tujuan_pinjaman"
+                                android:background="@color/bg_secondary_activity"
+                                android:layout_below="@+id/id_nilai_pinjam"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/txt_pengajuan_tujuan_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/side_padding"
+                                android:background="@color/light_grey"
+                                android:text=""
+                                android:padding="3dp"
+                                />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/id_nilai_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_nilai_pinjaman"
+                                android:background="@color/bg_secondary_activity"
+                                android:layout_below="@+id/id_lama_pinjaman"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/txt_nilai_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/side_padding"
+                                android:background="@color/light_grey"
+                                android:text=""
+                                android:padding="3dp"
+                                />
+                        </TableRow>
+                    </TableLayout>
+
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/id_lama_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_lama_pinjaman"
+                                android:background="@color/bg_secondary_activity"
+                                android:layout_below="@+id/textView11"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/txt_lama_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/side_padding"
+                                android:background="@color/light_grey"
+                                android:text=""
+                                android:padding="3dp"
+                                />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/id_deskripsi_permohonan"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_deskripsi_pengajuan_pinjaman"
+                                android:background="@color/bg_secondary_activity"
+                                android:layout_below="@+id/id_tgl_deal"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/txt_deskripsi_permohonan"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/side_padding"
+                                android:background="@color/light_grey"
+                                android:text=""
+                                android:padding="3dp"/>
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/id_tanggal_pengajuan"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txt_tanggal_pengajuan"
+                                android:background="@color/bg_secondary_activity"
+                                android:layout_below="@+id/id_siklus_pembayaran"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:padding="3dp"/>
+
+                            <TextView
+                                android:id="@+id/txt_tanggal_pengajuan_pinjaman"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/side_padding"
+                                android:background="@color/light_grey"
+                                android:text=""
+                                android:padding="3dp"/>
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

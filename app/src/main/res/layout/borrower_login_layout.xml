@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_activity">
+
+    <RelativeLayout
+        android:id="@+id/login_borrower_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main_activity">
+
+        <ImageView
+            android:id="@+id/img_main_logo"
+            android:layout_marginLeft="@dimen/triple_side_padding"
+            android:layout_marginRight="@dimen/triple_side_padding"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/main_logo"
+            android:layout_height="100dp" />
+
+
+        <ImageView
+            android:id="@+id/img_logo_qwikfund"
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="@dimen/seventy_side_padding"
+            android:layout_marginRight="@dimen/triple_side_padding"
+            android:background="@drawable/bg_login_qf"
+            android:layout_below="@+id/img_main_logo"
+            android:layout_centerHorizontal="true">
+
+        </ImageView>
+
+
+            <LinearLayout
+                android:layout_below="@+id/img_logo_qwikfund"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/triple_side_padding"
+                android:paddingRight="@dimen/triple_side_padding"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <EditText
+                    android:id="@+id/edt_input_user_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/double_side_padding"
+                    android:layout_marginBottom="@dimen/double_side_padding"
+                    android:background="@color/colorWhite"
+                    android:hint="@string/txt_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/input_login"
+                    android:textColorHint="@color/input_login_hint" />
+
+                <EditText
+                    android:id="@+id/edt_input_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorWhite"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/input_login"
+                    android:textColorHint="@color/input_login_hint" />
+
+                <Button
+                    android:id="@+id/btn_login_borrower"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/triple_side_padding"
+                    android:background="@color/bg_secondary_activity"
+                    android:text="@string/text_login_btn"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_aktivasi_borrower"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/double_side_padding"
+                    android:background="@color/bg_secondary_activity"
+                    android:text="@string/borowwer"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</ScrollView>
+

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/divider_one"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp">
+        </View>
+
+        <TextView
+            android:layout_marginLeft="@dimen/double_side_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_title_pengajuan_pinjaman"
+            android:textColor="@color/default_black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_logo"
+        android:layout_marginBottom="@dimen/side_padding"
+        android:layout_marginLeft="@dimen/side_padding"
+        android:layout_marginRight="@dimen/side_padding"
+        android:layout_marginTop="@dimen/side_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/setting_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/side_padding"
+                android:layout_marginRight="@dimen/side_padding"
+                android:layout_marginTop="@dimen/side_padding"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/setting_layout_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/side_padding"
+                    android:layout_marginRight="@dimen/side_padding"
+                    android:orientation="vertical"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/header_simulasi_pinjaman"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/txt_simulasi_pinjaman"
+                            android:textSize="10pt"
+                            android:layout_marginBottom="15dp"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/txt_simulasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/txt_tujuan_pinjaman"
+                            android:textColor="@color/default_black" />
+                    </TableRow>
+
+                    <TableRow>
+                        <Spinner
+                            android:id="@+id/spin_welcome_tujuan_pinjaman"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            style="@android:style/Widget.Spinner"
+                            />
+
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/side_padding">
+                        <TextView
+                            android:id="@+id/txt_jumlah_pinjaman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/txt_jumlah_pinjaman"
+                            android:textColor="@color/default_black" />
+                    </TableRow>
+
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/jumlah_pinjaman_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="15" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/footnote_jumlah_pinjaman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="5pt"
+                            android:text="@string/txt_footnote_pinjaman"
+                            android:textColor="@color/default_black"
+                            />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/side_padding">
+                        <TextView
+                            android:id="@+id/txt_lama_pinjaman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/txt_lama_pinjaman"
+                            android:textColor="@color/default_black" />
+                    </TableRow>
+
+                    <TableRow>
+                        <Spinner
+                            android:id="@+id/spin_welcome_lama_pinjaman"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            style="@android:style/Widget.Spinner"
+                            />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/side_padding">
+                        <TextView
+                            android:id="@+id/txt_bunga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/txt_bunga_pinjaman"
+                            android:textColor="@color/default_black" />
+                    </TableRow>
+
+                    <TableRow>
+                        <Spinner
+                            android:id="@+id/spin_welcome_bunga_pinjaman"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            style="@android:style/Widget.Spinner"
+                            />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/triple_side_padding">
+                        <Button
+                            android:id="@+id/welcome_btn_kalkulasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/side_padding"
+                            android:layout_marginLeft="@dimen/side_padding"
+                            android:layout_marginRight="@dimen/side_padding"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapebutton"
+                            android:textColor="@color/colorWhite"
+                            android:text="@string/btn_kalkulasi"/>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/submit_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/setting_content"
+                android:layout_marginBottom="@dimen/side_padding"
+                android:layout_marginLeft="@dimen/side_padding"
+                android:layout_marginRight="@dimen/side_padding"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/side_padding"
+                    android:layout_marginRight="@dimen/side_padding"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/header_simulasi_pembayaran"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/side_padding"
+                            android:text="@string/txt_simulasi_pinjaman"
+                            android:textSize="10pt"
+                            android:layout_marginBottom="15dp"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/txt_nilai_pinjaman"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/default_black" />
+                    </TableRow>
+
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/welcome_nilai_pinjaman_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="15" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/txt_nilai_pencairan_dana"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/default_black" />
+                    </TableRow>
+
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/welcome_nilai_pencairan_dana_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="15" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/txt_cicilan_perbulan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/default_black" />
+                    </TableRow>
+
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/welcome_cicilan_perbulan_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="15" />
+                    </TableRow>
+
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/txt_biaya_administrasi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/default_black" />
+                    </TableRow>
+
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/welcome_biaya_administrasi_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="15" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/txt_bunga_pinjaman_rupiah"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/default_black" />
+                    </TableRow>
+
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/welcome_bunga_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:maxLength="15" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/triple_side_padding">
+
+                        <Button
+                            android:id="@+id/btnSubmitSimulasi"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/side_padding"
+                            android:layout_marginLeft="@dimen/side_padding"
+                            android:layout_marginRight="@dimen/side_padding"
+                            android:layout_weight="1"
+                            android:background="@drawable/shapebutton"
+                            android:textColor="@color/colorWhite"
+                            android:text="@string/btn_submit"/>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

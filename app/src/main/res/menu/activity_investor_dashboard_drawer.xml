@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_investor_dashboard"
+            android:title="@string/nav_dashboard"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/nav_investor_daftar_pinjaman"
+            android:title="@string/nav_daftar_pinjaman"
+            android:icon="@drawable/ic_menu_pinjaman_saya"/>
+        <item
+            android:id="@+id/nav_investor_account"
+            android:title="@string/nav_account"
+            android:icon="@drawable/ic_account_circle"/>
+        <item
+            android:id="@+id/nav_investor_logout"
+            android:title="@string/nav_logout"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+
+
+</menu>

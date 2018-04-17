@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header_my_account_borrower"
+        android:layout_marginLeft="@dimen/double_side_padding"
+        android:textSize="12pt"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/double_side_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_account_detail"
+        android:textSize="10pt"
+        android:layout_marginTop="@dimen/side_padding"
+        android:layout_marginBottom="@dimen/side_padding"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginLeft="@dimen/double_side_padding"
+        android:layout_marginRight="@dimen/double_side_padding"
+        android:background="@color/colorBright">
+
+    </View>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imageItem"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/double_side_padding"
+                android:background="@color/colorBright"
+                android:layout_marginTop="@dimen/side_padding"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout>
+                <TextView
+                    android:id="@+id/txt_username_account"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/triple_side_padding"
+                    android:layout_marginTop="@dimen/side_padding"
+                    android:layout_marginLeft="@dimen/half_padding"
+                    android:background="@color/light_grey"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_star"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/triple_side_padding"
+                    android:layout_marginTop="@dimen/side_padding"
+                    android:layout_marginLeft="@dimen/half_padding"
+                    android:text="star"
+                    />
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="@dimen/triple_side_padding"
+                android:layout_marginLeft="@dimen/double_side_padding"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/triple_side_padding"
+                android:text="@string/kode_akun"
+                android:padding="@dimen/half_padding"
+                android:background="@color/colorBright"
+                android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/txt_kode_akun"
+                    android:layout_marginTop="@dimen/triple_side_padding"
+                    android:layout_marginLeft="@dimen/half_padding"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/triple_side_padding"
+                    android:text="@string/kode_akun"
+                    android:padding="@dimen/half_padding"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/light_grey"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_marginLeft="@dimen/double_side_padding"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/triple_side_padding"
+                android:text="@string/full_name"
+                android:padding="@dimen/half_padding"
+                android:background="@color/colorBright"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/txt_full_name"
+                android:layout_marginLeft="@dimen/half_padding"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/triple_side_padding"
+                android:text="@string/full_name"
+                android:padding="@dimen/half_padding"
+                android:background="@color/colorBright"
+                android:textColor="@color/colorWhite"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_marginLeft="@dimen/double_side_padding"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/triple_side_padding"
+                android:text="@string/txt_email"
+                android:padding="@dimen/half_padding"
+                android:background="@color/colorBright"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_marginLeft="@dimen/half_padding"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/triple_side_padding"
+                android:text="@string/txt_email"
+                android:padding="@dimen/half_padding"
+                android:background="@color/colorBright"
+                android:textColor="@color/colorWhite"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_marginTop="@dimen/double_side_padding"
+                android:layout_marginLeft="@dimen/double_side_padding"
+                android:layout_width="100dp"
+                android:padding="@dimen/half_padding"
+                android:layout_height="@dimen/triple_side_padding"
+                android:text="@string/borrower_status"
+                android:background="@color/colorBright"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/txt_borrower_status"
+                android:layout_marginTop="@dimen/double_side_padding"
+                android:layout_marginLeft="@dimen/half_padding"
+                android:layout_width="100dp"
+                android:padding="@dimen/half_padding"
+                android:layout_height="@dimen/triple_side_padding"
+                android:text="@string/borrower_status"
+                android:background="@color/colorBright"
+                android:textColor="@color/colorWhite"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_marginLeft="@dimen/double_side_padding"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/triple_side_padding"
+                android:padding="@dimen/half_padding"
+                android:text="@string/investor_status"
+                android:background="@color/colorBright"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/txt_investor_status"
+                android:layout_marginLeft="@dimen/half_padding"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/triple_side_padding"
+                android:padding="@dimen/half_padding"
+                android:text="@string/investor_status"
+                android:background="@color/colorBright"
+                android:textColor="@color/colorWhite"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
